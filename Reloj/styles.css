@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Long_Shot';
+    src: url('Long_Shot.ttf') format('truetype');
+}
+
+:root{
+    --black: #050d2c;
+    --blue: #00cdff;
+    --font: 'Long_Shot';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--black);
+}
+
+.reloj{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reloj .tiempo{
+    font-size: 6em;
+    letter-spacing: 4px;
+    color: var(--blue);
+}
